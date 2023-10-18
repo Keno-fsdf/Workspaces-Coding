@@ -1,12 +1,12 @@
+package Unsortiert;
 
 
-public class FreierFall_Modifikationb {
+public class FreierFall {
 
     static double fallGeschwindigkeit = 9.80665; //Eine globale Variable erstellen mit "static", sodass ich von überall auf diese Variable zugreifen kann
 
-        //Die Modifikation ist, dass nur alle 5 Sekunden der Wert ausgedrückt
-//Die Modifikation ist, dass nur alle 5 Sekunden der Wert ausgedrückt
-//Die Modifikation ist, dass nur alle 5 Sekunden der Wert ausgedrückt
+
+
 
     public static void main(String[] args)  {
         
@@ -16,7 +16,7 @@ public class FreierFall_Modifikationb {
         int countdown = scanner.nextInt(); //Fragt nach einem Integer vom Benutzer mit der Eingabe
         System.out.println(""); //Zur besseren Formatierung
 
-        countUP(1,countdown); //Hier ist n2
+        countUP(1,countdown); //ruft die Funktion countUp auf mit n1=1 und n2 = countdown
 
             scanner.close();
     }
@@ -28,12 +28,12 @@ public class FreierFall_Modifikationb {
 
     public static int countUP(int n1, int n2) { //Erwartet zwei Variablen als Integer
     
-    if (n1-1>=n2){
-        
+    if (n1==n2){
+            System.out.println("Zurückgelegte Strecke nach " + n1 + " sekunden:"); //Info für den Benutzer
+
             try {Thread.sleep(1000); //1000 milliseconds equals 1 second
-                
-                
-                
+                double zurückgelegteStrecke=fallGeschwindigkeit/2*Math.pow(n1, 2); //Berechnung
+                System.out.println(zurückgelegteStrecke + "m");
             
 
         }
@@ -41,15 +41,17 @@ public class FreierFall_Modifikationb {
             System.out.println("Thread interrupted");;
         } 
             
+            
 
         
         return 0; //end statement
     }
     else {
-        System.out.println("Zurückgelegte Strecke nach " + n1 + " sekunden:");
+        System.out.println("Zurückgelegte Strecke nach " + n1 + " sekunden:");  //Info für den Benutzer
+        
 
         try {Thread.sleep(1000); //1000 milliseconds equals 1 second
-            double zurückgelegteStrecke=fallGeschwindigkeit/2*Math.pow(n1, 2);
+            double zurückgelegteStrecke=fallGeschwindigkeit/2*Math.pow(n1, 2); //Berechnung
             System.out.println(zurückgelegteStrecke + "m");
 
 
@@ -62,9 +64,9 @@ public class FreierFall_Modifikationb {
 
         
         
-       
+        
 
-        return countUP(n1+5, n2);
+        return countUP(n1+1, n2);
     }
 
 
