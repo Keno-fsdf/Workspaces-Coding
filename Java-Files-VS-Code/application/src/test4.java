@@ -5,6 +5,7 @@ public class test4 {
         
 System.out.println("\"");
 System.out.println(14 + " + " + 5 + " = " + 14 + 5);
-
+char c = 3;
+System.out.println(c);
     }
 }
