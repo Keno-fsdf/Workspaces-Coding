@@ -1,3 +1,5 @@
+package Sortiert.ZweiteLektion ;
+
 public class pqFormel {
     public static void main(String[] args)  {
         int p = 10; 

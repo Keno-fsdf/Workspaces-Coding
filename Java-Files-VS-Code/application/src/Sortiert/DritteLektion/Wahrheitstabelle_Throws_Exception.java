@@ -1,7 +1,7 @@
-package Unsortiert;
-public class Wahrheitstabelle {
-    public static void main(String[] args)  {
-        
+
+public class Wahrheitstabelle_Throws_Exception {
+    public static void main (String[]args) throws Exception {
+                    
         java.util.Scanner scanner = new java.util.Scanner(System.in);
         
         System.out.println("Input either: t or f");  //Anweisung an den Benutzer
@@ -12,7 +12,7 @@ public class Wahrheitstabelle {
         boolean validInput = false;
 
 
-        while (validInput ==false) {   //die While schleife überprüft ob man es sich um eine Valide eingabe handelt
+        while (validInput ==false)  {   //die While schleife überprüft ob man es sich um eine Valide eingabe handelt
             // und falls nicht, dann wiederholt sich die While-Schleife bzw. Anfrage an den User
 
             char erstesEinzelzeichen = scanner.next(".").charAt(0);
@@ -24,7 +24,7 @@ public class Wahrheitstabelle {
 
         } 
             else{
-                System.out.println("You can only input t or f");  //Wird im Terminal ausgegeben, falls der Benutzter NICHT eine Valide Eingabe getätigt hat
+                throw new Exception("You can only input t or f");
             }
         
 
@@ -41,9 +41,9 @@ public class Wahrheitstabelle {
         if (erstesEinzelzeichen==firstValidChar && zweitesEinzelzeiche==firstValidChar){
             System.out.println(3);
         }
-        }
+        
         scanner.close(); //Scanner muss immer wieder geschlossen werden
-
     }
 
-}
+    }
+}   

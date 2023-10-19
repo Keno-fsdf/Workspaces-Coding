@@ -1,4 +1,4 @@
-package Unsortiert;
+
 import java.util.ArrayList;
 
 
@@ -6,7 +6,7 @@ import java.util.ArrayList;
 //Fragen ob er eine Lösung hat ab dem Part wo ich switch statements benutzt, also wie man das so macht, dass unendlich viele Pizzen verglichen werden können
 //Frage -->Wieso sie eine Möglichkeit bei vs-Code die Probleme zu ignorieren
 //Wie schlimm sind "Probleme im Code" wenn trotzdem der Code funktioniert???
-public class Pizzarechner {
+public class Pizzarechner_Nicht_Vortellbar {
     public static void main(String[] args)  {
         java.util.Scanner scanner = new java.util.Scanner(System.in); //Scanner-Code
         ArrayList<Double>  durchmesserDerPizzen_Liste = new ArrayList<Double>(); //Zwischenspeicher für Durchmesser
@@ -14,7 +14,7 @@ public class Pizzarechner {
         ArrayList<Double> flächePreisVerhältnis_Liste= new ArrayList<Double>();      //Zwischenspeicher für den Preis
        
       
-        int anzahDerPizzen = 3;       //Es können maximal 3 Pizzen miteinander verglichen werden
+        int anzahDerPizzen = 2;       //Es können maximal 3 Pizzen miteinander verglichen werden
         int anzahlDerBerechnungen = anzahDerPizzen;
        
         while (anzahDerPizzen>0) {

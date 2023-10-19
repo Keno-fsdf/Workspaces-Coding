@@ -1,4 +1,5 @@
-package Unsortiert;
+
+
 public class Würfel {
     public static void main(String[] args)  {
         boolean programmWiederholen = true; // Wiederholt den Vorgang wenn eine Zahl bei Math.random rauskommt die entweder 0 oder größer als 6 ist
@@ -13,7 +14,7 @@ public class Würfel {
 
 
             
-            switch (umwandlungVonNumber) {
+            switch (umwandlungVonNumber) { //Man kann ALTERNATIV auch mehrere IF-Statements benutzen
                 case 1:
                 System.out.println("Eins gewürfelt");
                 programmWiederholen = false; //Damit nicht nochmal das Programm läuft -->Es kam ja eine Würfelzahl raus

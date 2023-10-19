@@ -1,8 +1,12 @@
-public class Uhr {
+package Sortiert.ZweiteLektion ;
+import java.time.LocalDateTime;
+
+public class Uhr_WeiterAufgabe_Alternativ_Lösung {
     public static void main(String[] args)  {
-        int stunden = 17;
-        int minuten = 24;
-        int sekunden = 48;
+        int stunden = LocalDateTime.now().getHour();
+        int minuten = LocalDateTime.now().getMinute();
+        int sekunden = LocalDateTime.now().getSecond();
+       
         int zeitSeitMitternacht = (stunden*3600 + minuten+60 + sekunden); //Eine Stunde hat 3600 Sekunden
    
         System.out.println("Seit Mitternacht sind " + zeitSeitMitternacht + " Sekunden vergangen");  //Die Zeit seit Mitternacht gebe ich im Terminal aus
@@ -18,5 +22,4 @@ public class Uhr {
 
 
     }    
-    
 }
