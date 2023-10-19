@@ -9,7 +9,7 @@ public class Uhr {
         System.out.println("Seit Mitternacht sind " + zeitSeitMitternacht + " Sekunden vergangen");  //Die Zeit seit Mitternacht gebe ich im Terminal aus
         
         double zeitBisMitternacht = ((24 * 3600) - (stunden*3600 + minuten+60 + sekunden)); // Hab extra Klammern für die bessere Lesbarkeit hinzugefügt , Sekunden an einem Tag = 24*3600 Sekunden
-        int zeitBisMitternacht_Int = (int)Math.round(zeitBisMitternacht);
+        int zeitBisMitternacht_Int = (int)Math.round(zeitBisMitternacht);  //-->Muss ich machen, damit anstatt 45.0 sekunden 45 sekunden dasteht
         System.out.println("Bis Mitternacht sind es " + zeitBisMitternacht_Int + " Sekunden"); //Verbleibende Sekunden des aktuellen Tages
         
         
