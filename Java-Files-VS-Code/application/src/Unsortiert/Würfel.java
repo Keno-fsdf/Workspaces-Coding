@@ -1,3 +1,4 @@
+package Unsortiert;
 public class Würfel {
     public static void main(String[] args)  {
         boolean programmWiederholen = true; // Wiederholt den Vorgang wenn eine Zahl bei Math.random rauskommt die entweder 0 oder größer als 6 ist
