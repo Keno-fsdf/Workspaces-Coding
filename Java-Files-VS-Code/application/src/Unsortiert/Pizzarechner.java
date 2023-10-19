@@ -1,8 +1,8 @@
-package Unsortiert;
+ 
 import java.util.ArrayList;
 
 
-//Fragen ob man Import benutzen darf, also Libarary von außen
+//Fragen ob man Import benutzen darf, also Libarary von außen -->Nein darf man nicht
 //Fragen ob er eine Lösung hat ab dem Part wo ich switch statements benutzt, also wie man das so macht, dass unendlich viele Pizzen verglichen werden können
 //Frage -->Wieso sie eine Möglichkeit bei vs-Code die Probleme zu ignorieren
 //Wie schlimm sind "Probleme im Code" wenn trotzdem der Code funktioniert???
