@@ -16,7 +16,7 @@ public class gültigeUhrzeit {
         int sekunden = scanner.nextInt();
         if (stunden<24 && minuten<60 && sekunden<60)
             System.out.println("Es handelt sich um eine gültig Uhrzeit");
-        if (stunden>24 || minuten>60 || sekunden>60){
+        if (stunden>=24 || minuten>=60 || sekunden>=60){
             System.out.println("Es handelt sich um keine gültige Uhrzeit");
         }
 
