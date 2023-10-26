@@ -10,7 +10,7 @@ public class Pizzarechner_Vorstellbar {
 
         System.out.println("\nGeben sie den Durchmesser der zweiten Pizza ein: "); // das \n für die bessere Übersicht
         double durchmesserZwei = scanner.nextDouble();
-        System.out.println("Geben sie den Preis der ersten Pizza ein: "); //Anweisung an den Benutzer
+        System.out.println("Geben sie den Preis der zweite Pizza ein: "); //Anweisung an den Benutzer
         double preisZwei = scanner.nextDouble();
 
         //Berechnung der Fläche der Pizzen

@@ -5,12 +5,10 @@ import java.io.IOException;
 public class printE {
 
     public static void main(String[] args) throws IOException  {
-        char einzelzeichen = (char) System.in.read();
-        // int a = einzelzeichen;
-        // char c = 0;
-        // System.out.println(c);
-        System.out.println(einzelzeichen);
-        if (einzelzeichen==48) System.out.println("Die Zahl ist 66"); 
+        int ueberpruefung1 = 6513435 %10000000/1000000; 
+        int ueberpruefung2 = 6513435 %1000000/100000; 
+        System.out.println(ueberpruefung1);
+        System.out.println(ueberpruefung2); //Das ganze mit nem & Operator verknüpfen und wir haben es 
     }    
     
 }
