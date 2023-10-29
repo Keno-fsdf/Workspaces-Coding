@@ -6,11 +6,12 @@ public class bennung {
         // System.out.println(zufallszahl);
         java.util.Scanner scanner = new java.util.Scanner(System.in);
         boolean zahlNochNichtErraten = false;
-
+        System.out.println(zufallszahl);
 
         while (zahlNochNichtErraten == false) {
         System.out.println("Raten sie die Zufallszahl indem sie eine Zahl eingeben: ");
         int zahlVomUser = scanner.nextInt();
+        
         if (zahlVomUser>zufallszahl) {
             System.out.println("Die Zufallszahl ist kleiner");
 
