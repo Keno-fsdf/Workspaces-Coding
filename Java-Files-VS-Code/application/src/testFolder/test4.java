@@ -1,14 +1,10 @@
 package testFolder;
 public class test4 {
     public static void main (String[]args) {
-        int a = 3;
-    while (a ==3) {
-            System.out.println("Kneo");
-    }
+        double a = 31.47 %0.1;
+        System.out.println(a);
 
-    while (true) {
-        System.out.println("bla bla");
-        
-    }
-    }
+}       
+// 0 -->9, weil es ungenau
+//ich will die nachkommastelle auf 1 haben, also bspw. 10000
 }
