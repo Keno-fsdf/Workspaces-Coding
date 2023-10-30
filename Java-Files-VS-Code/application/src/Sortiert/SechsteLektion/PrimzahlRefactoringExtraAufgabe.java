@@ -1,4 +1,4 @@
-package Sortiert.FünfteLektion;
+package Sortiert.SechsteLektion;
 import java.util.Scanner;
 public class PrimzahlRefactoringExtraAufgabe {
     public static void main (String []args) {

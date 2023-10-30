@@ -1,4 +1,4 @@
-package Sortiert.FünfteLektion;
+package Sortiert.SechsteLektion;
 
 public class Fakultiät {
     public static void main (String[]args) {
