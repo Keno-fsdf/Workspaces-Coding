@@ -32,7 +32,7 @@ public class Primzahl_Vorstellung {
         else System.out.println("Es handelt sich um eine Primzahl");
 
         
-
+        
 
 
         scanner.close();
