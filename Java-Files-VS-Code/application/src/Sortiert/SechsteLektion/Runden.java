@@ -3,7 +3,10 @@ package Sortiert.SechsteLektion;
 public class Runden {
     public static void main (String[]args) {
         
-        System.out.println (rundenMitAngabeNachkommastellen(31.31, 1)); //Wenn 0 kommt rundet es nach oben aus, dass liegt an der rechenfehlerdifferenz in java -->Lösung hierfür wäre, dass ich alle Zahlen in Integer umwandle, indem ich bspw. *1000 rechne und danach erst mit If-Statements prüfen und danach erst die Zahlen wieder in Kommastellen umwandeln
+        System.out.println (rundenMitAngabeNachkommastellen(31.301499, 3)); //Nur wenn man bspw. 31.30  mit runden auf 1 nachkommastelle schreibt funktioniert das programm beim runden nicht, bei 31.01 geht es wieder richtig
+        //das problem von oben kommt von der rechnenungsungeaugigkiet bei double werten --> es macht aus 0 --> 9,99999  bzw. 0, 99999999
+        //Lösung dafür ist, alle kommazahlen in ganzzahhlige (große) werte umzuwandeln und damit alles zu berechnen bzw. mit if statements zu arbeiten und erst am ende die werte wieder in kommastellen umwandeln
+        //Wenn 0 kommt rundet es nach oben aus, dass liegt an der rechenfehlerdifferenz in java -->Lösung hierfür wäre, dass ich alle Zahlen in Integer umwandle, indem ich bspw. *1000 rechne und danach erst mit If-Statements prüfen und danach erst die Zahlen wieder in Kommastellen umwandeln
         
 
     }
@@ -41,20 +44,11 @@ public class Runden {
             //1 nachkomma stelle = zahl%1
             //2 nachkomma stelle = zahl %10
             double a = 1.0/nachkommastelle; //1.0 / 10 --> 0.1
-            System.out.println(a); 
-           System.out.println(zahl%a);  //31.40 %0.1 
-            //abrunden
-            boolean esHandeltSichUm0 = false;
-            // if ((zahl%a<1000000000%1/nachkommastelle)&& (zahl%a>0.00000000000000000001%1/nachkommastelle)){ // anstatt 0.5 lieber 0.499999 -->Weil teilweise aufgrund der rechenfehlerdifferenz durch java bspw. 0.49999999 rauskommt und dann es nicht zu 0.5 gehört
-            // zahl = zahl*nachkommastelle;    //anstatt 0.499999 vielleicht was mit der epsilon umgebung machen -->Das nochmal anschauen üben
-            // zahl = (int) zahl;
-            // zahl = zahl/nachkommastelle;
-            // esHandeltSichUm0 = true;
-            // return zahl;   }
 
 
 
-            if (zahl%a<0.4999999999%1/nachkommastelle && esHandeltSichUm0 ==false){ // anstatt 0.5 lieber 0.499999 -->Weil teilweise aufgrund der rechenfehlerdifferenz durch java bspw. 0.49999999 rauskommt und dann es nicht zu 0.5 gehört
+
+            if (zahl%a<0.4999999999%1/nachkommastelle){ // anstatt 0.5 lieber 0.499999 -->Weil teilweise aufgrund der rechenfehlerdifferenz durch java bspw. 0.49999999 rauskommt und dann es nicht zu 0.5 gehört
             zahl = zahl*nachkommastelle;    //anstatt 0.499999 vielleicht was mit der epsilon umgebung machen -->Das nochmal anschauen üben
             zahl = (int) zahl;
             zahl = zahl/nachkommastelle;
