@@ -8,7 +8,7 @@ int nenner = 1;
 double berechnung;
 double zwischenergebnis = 0;
 do {
-berechnung = 6* (1.0/nenner);  //Auf das .0 achten, sonst macht es eine Integer division -->falsche ergebnis
+berechnung = 6* (1.0/Math.pow(nenner,2));  //Auf das .0 achten, sonst macht es eine Integer division -->falsche ergebnis
 
 zwischenergebnis = zwischenergebnis + berechnung;
 

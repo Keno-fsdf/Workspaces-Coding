@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Potenz {
     public static void main (String[]args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Geben sie die Baisis an");
+        System.out.println("Geben sie die Basis an");
         double b = scanner.nextInt();
         System.out.println("Geben sie die Potenz an");
         int n = scanner.nextInt(); //potzen
@@ -48,13 +48,13 @@ public class Potenz {
                 if (ersteRechnung==true) {
                 ergebnis = b*b;
                 ersteRechnung=false;
-                System.out.println("rodrigo");
+                // System.out.println("rodrigo");
                 n = n+2;
                 }
                 else {
 
                 ergebnis =  ergebnis*b;    
-                    System.out.println("sdkfsjdf");
+                    // System.out.println("sdkfsjdf");
                     n = n+1;
 
                 }

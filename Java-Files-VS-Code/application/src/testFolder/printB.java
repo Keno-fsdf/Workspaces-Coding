@@ -2,7 +2,12 @@ package testFolder;
 public class printB {
 
     public static void main(String[] args)  {
-        System.out.println("");  //Ich gebe das Ergbnis im Terminal aus. 
+     double a = -0.1;
+     
+  
+     System.out.println(Math.sqrt(a));
+
+
     }    
     
 }

@@ -11,7 +11,7 @@ public class FreierFall_Vorstellung {
 
 
         for (int countUP = 0; countUP<=zeitUser; countUP++)  {
-            double zurückgelegteStrecke = 0.5*fallGeschwindigkeit*countUP; //Berechnung der zurückgelegten Strecke
+            double zurückgelegteStrecke = 0.5*fallGeschwindigkeit*(countUP*countUP); //Berechnung der zurückgelegten Strecke
             Thread.sleep(1000);
 
             System.out.println("Zurückgelegt Strecke nach " + countUP + " Sekunden:");
