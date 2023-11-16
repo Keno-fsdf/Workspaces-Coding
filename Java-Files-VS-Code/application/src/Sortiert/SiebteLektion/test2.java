@@ -50,7 +50,7 @@ public class test2 {
 
 
 
-//     scanner.close();
+    scanner.close();
 }
 
 

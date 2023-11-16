@@ -28,15 +28,36 @@ public class umwandlungInGroßbuchstaben {
             
         }
 
-        System.out.println("Array: " + java.util.Arrays.toString(array));
+        // System.out.println("Array: " + java.util.Arrays.toString(array));
+        umwandlungInGroßbuchstabe(array);
 
         // Schließe den Scanner
         scanner.close();
     }
 
     public static void umwandlungInGroßbuchstabe(char[]array) {
+        System.out.println();
         //hier morgen weitercoden
+        // int i = array.length;
+        int b = 0;
+        for (char Buchstaben : array) {
 
+            if (97<=Buchstaben && Buchstaben<=122) {
+                int asciiWert = (int) Buchstaben;
+                asciiWert = asciiWert-32;
+                Buchstaben = (char) asciiWert;
+            }
+            System.out.println(Buchstaben);
+
+            array [b] = Buchstaben;
+            
+             b++;
+
+
+
+
+        }
+         System.out.println("Array: " + java.util.Arrays.toString(array));
 
     }
 
