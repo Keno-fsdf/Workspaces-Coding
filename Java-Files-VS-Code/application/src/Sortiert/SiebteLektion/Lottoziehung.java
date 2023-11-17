@@ -39,34 +39,7 @@ public static int[] lottoZahlenListe() {
     return zahlenListe;
 }
 
-    // public static int[] lottoZahlenListe () {
-    //     int[] ZahlenListe= new int[6];
-    //     for (int i =0; i<ZahlenListe.length; i++) {
-    //         int a = (int) (1+Math.random()*49);
-    //         ZahlenListe [i] = a;
-    //     }
-    //     for (int b = 0; b<ZahlenListe.length; b++) {
-    //         System.out.println(ZahlenListe[b]); 
-    //         for (int i = 1; i<ZahlenListe.length; i++ ) {
-    //             if (ZahlenListe[b] == ZahlenListe[i]) {
-    //                 int a = (int) (1+Math.random()*49);
-    //                 ZahlenListe[b] = a; //das ist 100% prozent das problem
 
-
-    //             }
-    //             System.out.println(ZahlenListe[i]);
-
-    //         }
-
-
-    //     }
-
-    //     return ZahlenListe;
-        
-
-
-
-    // }
 
 
 
