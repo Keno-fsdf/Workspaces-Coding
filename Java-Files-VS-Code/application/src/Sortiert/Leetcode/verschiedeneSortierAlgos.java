@@ -1,10 +1,10 @@
 package Sortiert.Leetcode;
 
-public class testVier {
+public class verschiedeneSortierAlgos {
     public static void main(String[] args) {
-        int[] array = {-64, 34, 25, 102, -220, 11, 90};
+        int[] array = {34, -64, 25, 102, -220, 11, 90};
 
-        selectionSort(array);
+        bubbleSort  (array);
 
         System.out.println("Sortiertes Array:");
         for (int value : array) {
@@ -21,31 +21,48 @@ public class testVier {
         
         for (int i = 0; i<liste.length; i++) {
             int minimum = liste[i];
-            for (int j = 1 +i; j<liste.length; j++) {
+            // System.out.println(minimum);  //-->wir benutzen minimum als zwischenspeicher
+            for (int j = 1 +i; j<liste.length; j++) { //minimum = 34,  liste[i] = -64, liste[j] = 34
                 if (liste[i]>liste[j]) { minimum = liste[i]; liste [i] = liste[j]; liste[j] = minimum;  //mein bubblesort -->bei dem if statement ">" umändern um andersherum zu sortiern
             }
             
-        }}
-
-
-    }
-
-    public static void selectionSort (int[] liste) {
-        for (int j = 0; j<liste.length; j++) {
-        int minimum = liste[j];
-        int zwischenspeicher = liste[j];
-        for (int i = j+1; i<liste.length; i++) {
-            if (liste[i]<minimum) { minimum = liste[i];}
-
-
         }
-        // liste[j] = liste[minimum];
-        // liste[minimum] = zwischenspeicher;
     
     }
 
 
     }
+
+
+
+        public static void selectionSort(int[] liste) {
+        for (int j = 0; j < liste.length - 1; j++) {
+            int minIndex = j;
+    
+            for (int i = j + 1; i < liste.length; i++) {
+                if (liste[i] < liste[minIndex]) {
+                    minIndex = i;
+                }
+            }
+    
+            // Swap liste[j] and liste[minIndex]
+            int temp = liste[j];
+            liste[j] = liste[minIndex];
+            liste[minIndex] = temp;
+        }}
+    
+
+
+    
+
+
+
+
+
+
+
+
+    
 
     public static void Insertionsortieren (int[]liste ) {
         int länge = liste.length;

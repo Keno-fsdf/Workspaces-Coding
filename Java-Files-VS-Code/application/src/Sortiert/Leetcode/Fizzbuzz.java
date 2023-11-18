@@ -5,7 +5,7 @@ public class Fizzbuzz {
         String ergebnis = "";
         int fizz = 0;
         int buzz =0;
-        int fizzbuzz = 0;
+        // int fizzbuzz = 0;
 
         for (int i=1; i<100; i++) {
             fizz++;
@@ -25,7 +25,7 @@ public class Fizzbuzz {
                 buzz =0;
 
             }
-
+            
            else {
             String a = Integer.toString(i);
             ergebnis+= a;
