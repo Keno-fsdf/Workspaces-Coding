@@ -2,9 +2,9 @@ package Sortiert.Leetcode;
 
 public class verschiedeneSortierAlgos {
     public static void main(String[] args) {
-        int[] array = {34, -64, 25, 102, -220, 11, 90};
+        int[] array = {6,3,8,9,-1,8,3,-5545,4,6,87};
 
-        bubbleSort  (array);
+        selectionSort(array);
 
         System.out.println("Sortiertes Array:");
         for (int value : array) {
@@ -20,10 +20,10 @@ public class verschiedeneSortierAlgos {
         
         
         for (int i = 0; i<liste.length; i++) {
-            int minimum = liste[i];
+            // int minimum = liste[i];
             // System.out.println(minimum);  //-->wir benutzen minimum als zwischenspeicher
             for (int j = 1 +i; j<liste.length; j++) { //minimum = 34,  liste[i] = -64, liste[j] = 34
-                if (liste[i]>liste[j]) { minimum = liste[i]; liste [i] = liste[j]; liste[j] = minimum;  //mein bubblesort -->bei dem if statement ">" umändern um andersherum zu sortiern
+                if (liste[i]>liste[j]) { int minimum = liste[i]; liste [i] = liste[j]; liste[j] = minimum;  //mein bubblesort -->bei dem if statement ">" umändern um andersherum zu sortiern
             }
             
         }
@@ -36,18 +36,18 @@ public class verschiedeneSortierAlgos {
 
 
         public static void selectionSort(int[] liste) {
-        for (int j = 0; j < liste.length - 1; j++) {
-            int minIndex = j;
+        for (int i = 0; i < liste.length - 1; i++) {
+            int minIndex = i;
     
-            for (int i = j + 1; i < liste.length; i++) {
-                if (liste[i] < liste[minIndex]) {
-                    minIndex = i;
+            for (int j = i + 1; j < liste.length; j++) {
+                if (liste[j] < liste[minIndex]) {
+                    minIndex = j;
                 }
             }
     
             // Swap liste[j] and liste[minIndex]
-            int temp = liste[j];
-            liste[j] = liste[minIndex];
+            int temp = liste[i];
+            liste[i] = liste[minIndex];
             liste[minIndex] = temp;
         }}
     
