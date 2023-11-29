@@ -4,7 +4,7 @@ public class verschiedeneSortierAlgos {
     public static void main(String[] args) {
         int[] array = {6,3,8,9,-1,8,3,-5545,4,6,87};
 
-        selectionSort(array);
+        Insertionsortieren(array);
 
         System.out.println("Sortiertes Array:");
         for (int value : array) {
@@ -64,24 +64,38 @@ public class verschiedeneSortierAlgos {
 
     
 
-    public static void Insertionsortieren (int[]liste ) {
-        int länge = liste.length;
+    public static void Insertionsortieren (int[]nums ) {
+        // int länge = liste.length;
 
-        for (int i = 1; i<länge; i++) {
-            int zwischenspeicher = liste[i];
-            int j = i-1; //zeiger
+        // for (int i = 1; i<länge; i++) {
+        //     int zwischenspeicher = liste[i];
+        //     int j = i-1; //zeiger
 
-            while (j>=0 && liste[j]> zwischenspeicher) {     //verschiebt die element nach links
-                liste[j+1] = liste[j];
+        //     while (j>=0 && liste[j]> zwischenspeicher) {     //verschiebt die element nach links
+        //         liste[j+1] = liste[j];
+        //         j--;
+
+
+        //     }
+        //     liste [j+1] = zwischenspeicher;
+
+
+
+        // }
+        for (int i = 1; i<nums.length; i++) {
+            int j = i-1;
+            int zwischenspeicher = nums[i];
+
+            while (j>=0 && nums[j]>zwischenspeicher) {
+
+                nums[j+1] = nums[j];
                 j--;
-
-
             }
-            liste [j+1] = zwischenspeicher;
-
-
+            nums[j+1] = zwischenspeicher;
 
         }
+
+
 
 
     }
