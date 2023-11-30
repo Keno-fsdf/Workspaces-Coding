@@ -2,6 +2,8 @@ package Sortiert.AchteLektion;
 
 public class lieblingsautos {
     public static void main(String[] args) {
+        //Erstellung der verschieden Auto-Objekte
+
         Auto Bmw1er = new Auto();
         Bmw1er.Marke = "Bmw";
         Bmw1er.Hubraum = 500;
@@ -22,18 +24,22 @@ public class lieblingsautos {
         eAutoAMG.Farbe = "blau";
         eAutoAMG.Modell = 36;
 
-        int[] hubraums = {Bmw1er.Hubraum,  audia3.Hubraum, eAutoAMG.Hubraum = 1000 };
-        bubbleSort(hubraums);
-        System.out.println("Der größte Hubraum ist: " + hubraums[0]);
+        //Erstellung einer Array mit dem Hubraum von jedem Auto
+        int[] hubraums = {Bmw1er.Hubraum,  audia3.Hubraum, eAutoAMG.Hubraum };
+        bubbleSort(hubraums);   //Sortiert diese Array
+        System.out.println("Der größte Hubraum ist: " + hubraums[0]); //Gibt den größten Hubraum aus
 
 
-        // System.out.println("Auto:" + Bmw1er);
+     
 
         //Liste von den autos
         Auto[] autos = {Bmw1er,audia3, eAutoAMG};
         //Ausgabe der autos
         System.out.println("\nAutos: ");
-        for (Auto elemente: autos) System.out.println("Auto: " +elemente + " ");
+        int i = 1;
+        for (Auto elemente: autos) {  System.out.println(i+".Auto: " +"\n"+elemente + " "); i++;
+
+    }
 
     }
 

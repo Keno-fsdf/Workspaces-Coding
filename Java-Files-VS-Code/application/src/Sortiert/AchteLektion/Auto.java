@@ -7,8 +7,7 @@ public class Auto {
     int Modell;
 
     public String toString() {
-        return Marke + " "+ Hubraum + " " + Farbe + " " + Modell ;
+        return "Marke: " + Marke + "| Hubraum: "+ Hubraum + "| Farbe: " + Farbe + "| Modell: " + Modell ;
 
     }
-    
 }
