@@ -5,10 +5,10 @@ public class AutoLektionNeun {
     private int Hubraum;
     private String Farbe;
     private int Modell;
-
+    private static int produktionszähler;
 
     public AutoLektionNeun(String Marke, int Hubraum, String Farbe, int Modell) {  //Konstrukter //KEIN void machen
-
+        produktionszähler++;
         
         
         if (Hubraum<0) this.Hubraum = 1600;  //Überprüft, ob der Parameter Hubraum vom Benutzer kleiner als 0 ist und setzt es falls ja auf 1600
