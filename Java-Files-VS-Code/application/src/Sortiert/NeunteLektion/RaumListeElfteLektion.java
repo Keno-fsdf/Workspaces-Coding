@@ -16,7 +16,7 @@ public class RaumListeElfteLektion {
 
         ersterRaum.betreteRaum(ersterStudent.getFirstName(), ersterStudent.getMatrikelnummer());
         ersterRaum.betreteRaum(zweiterStudent.getFirstName(), zweiterStudent.getMatrikelnummer());
-        String roomPlan = ersterRaum.createCurrentRoomPlan(false);
+        String roomPlan = ersterRaum.createCurrentRoomPlan(true);
 
         
 

@@ -6,6 +6,8 @@ public class RaumBelegungElfteLektion {
     private boolean belegt;
     private String[][] NamenListe;
     private int[][] MatrikelnummerListe;
+    private int erweiterung;
+
 
     public RaumBelegungElfteLektion (String kennung, int leange, int breite) {
         this.belegt = false; //Bei der Erstellung des Raums ist ja der Raum zu 100% nicht belegt
@@ -15,6 +17,16 @@ public class RaumBelegungElfteLektion {
         this.MatrikelnummerListe = new int[leange][breite];
     }
 
+
+
+    public RaumBelegungElfteLektion(String kennung, int leange, int breite,int erweiterung) {
+        this.belegt = false; //Bei der Erstellung des Raums ist ja der Raum zu 100% nicht belegt
+        this.kennung = kennung;
+        
+        this.NamenListe = new String[leange][breite];
+        
+        this.MatrikelnummerListe = new int[leange][breite];
+    }
 
 
     public String createCurrentRoomPlan(boolean showEmptyChair) {
