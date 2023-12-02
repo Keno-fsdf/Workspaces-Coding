@@ -1,3 +1,4 @@
+package Sortiert.testFolder;
 
 import java.util.*;
 public class VerständnisVergleichStrings {
