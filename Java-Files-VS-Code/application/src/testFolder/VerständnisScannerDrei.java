@@ -1,4 +1,4 @@
-package testFolder;
+
 
 public class VerständnisScannerDrei {
     public static void main (String[]args) {

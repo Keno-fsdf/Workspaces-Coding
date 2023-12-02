@@ -1,4 +1,4 @@
-package testFolder;
+
 import java.util.*;
 public class VerständnisVergleichStrings {
     public static void main (String[]args) {

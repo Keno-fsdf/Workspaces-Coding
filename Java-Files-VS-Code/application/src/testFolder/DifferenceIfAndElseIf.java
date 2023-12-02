@@ -1,4 +1,4 @@
-package testFolder;
+
 public class DifferenceIfAndElseIf {
 
     public static void main(String[] args)  {

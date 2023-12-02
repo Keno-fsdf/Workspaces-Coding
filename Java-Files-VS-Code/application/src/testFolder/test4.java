@@ -1,4 +1,4 @@
-package testFolder;
+
 import java.util.Scanner;
 import java.lang.Math;
 public class test4 extends Exception{

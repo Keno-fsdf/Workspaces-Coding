@@ -1,4 +1,4 @@
-package testFolder;
+
 
 public class zahlNichtZweiExecption extends Exception{
 
