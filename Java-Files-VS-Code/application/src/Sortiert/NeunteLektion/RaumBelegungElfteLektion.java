@@ -14,25 +14,54 @@ public class RaumBelegungElfteLektion {
         this.kennung = kennung;
         
         this.NamenListe = new String[leange][breite];
+
+
         this.MatrikelnummerListe = new int[leange][breite];
     }
 
 
-
-    public RaumBelegungElfteLektion(String kennung, int leange, int breite,int erweiterung) {
-        this.belegt = false; //Bei der Erstellung des Raums ist ja der Raum zu 100% nicht belegt
+    public RaumBelegungElfteLektion(String kennung, int leange, int breite, int erweiterung) {
+        this.belegt = false;
         this.kennung = kennung;
-        
-        this.NamenListe = new String[leange][breite];
-        
-        this.MatrikelnummerListe = new int[leange][breite];
-    }
+        this.erweiterung = erweiterung;
+    
+        this.NamenListe = new String[leange][breite+erweiterung];
+        this.MatrikelnummerListe = new int[leange][breite+erweiterung];
+        int zähler = 0;
+        //wenn die erweiterung kleiner als die länge der Namenlist ist, dann
+        for (int i = erweiterung; i<this.NamenListe.length; i++) {
+            zähler++;
+ }
+
+        }
+
+
+
 
 
     public String createCurrentRoomPlan(boolean showEmptyChair) {
         String ergebnis = "";
         for (int i = 0; i<NamenListe.length; i++) {
+
+
+            // for (int k = 0; k<NamenListe.length-erweiterung; k++) {
+            //     ergebnis+="    "; //Es muss um 4 zeichen pro erweiterungszeile erweitert wrden
+            // }
+            
+                    if(i>erweiterung) {
+                    ergebnis+="__  ";
+                }
+                    else { 
+                        int a = NamenListe.length-erweiterung;
+                        ergebnis+="    ";
+                
+                }
+
             for (int j = 0; j<NamenListe[i].length; j++) {
+
+                
+          
+
                 if (NamenListe[i][j] != null) {
                     //Fügt die ersten beiden Buchstaben des Studentens zum String hinzu
                     ergebnis+= NamenListe[i][j].charAt(0);
@@ -46,7 +75,14 @@ public class RaumBelegungElfteLektion {
 
                 }
 
+
             }
+
+                    if(i>erweiterung) {
+                    ergebnis+="__ ";
+                }
+                    else ergebnis+="    ";
+
             ergebnis+="\n";
 
         }

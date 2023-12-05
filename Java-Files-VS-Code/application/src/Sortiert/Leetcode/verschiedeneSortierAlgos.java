@@ -26,9 +26,30 @@ public class verschiedeneSortierAlgos {
                 if (liste[i]>liste[j]) { int minimum = liste[i]; liste [i] = liste[j]; liste[j] = minimum;  //mein bubblesort -->bei dem if statement ">" umändern um andersherum zu sortiern
             }
             
-        }
+            }}
     
     }
+
+    public static void bubbleSort3 (int[]array) {
+        for (int i = 0; i< array.length; i++) {
+
+            for (int j = 1+i; j< array.length; j++) {
+            if (array[i] < array[j]) {
+            int temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+            
+            
+            }
+            
+            
+            }
+            
+            
+            
+
+    }
+
 
 
     }
@@ -99,4 +120,5 @@ public class verschiedeneSortierAlgos {
 
 
     }
+
 }

@@ -3,7 +3,7 @@ package Sortiert.NeunteLektion;
 public class RaumListeElfteLektion {
     public static void main(String[] args) {
         //Raum
-        RaumBelegungElfteLektion ersterRaum = new RaumBelegungElfteLektion("1.2.1", 7, 5);
+        RaumBelegungElfteLektion ersterRaum = new RaumBelegungElfteLektion("1.2.1", 5, 8,1);
 
 
 
