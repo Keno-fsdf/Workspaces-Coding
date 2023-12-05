@@ -1,4 +1,4 @@
-package Sortiert.ZwölfteLektion;
+package Sortiert.ZwölfteLektion.Listen;
 
 public class LottoListe {
     private Node head; // Zeiger auf den Anfang der Liste   //-->hat doch am Anfang den Wert "null??"

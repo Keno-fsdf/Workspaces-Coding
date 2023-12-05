@@ -1,4 +1,4 @@
-package Sortiert.ZwölfteLektion;
+package Sortiert.ZwölfteLektion.Listen;
 
 public class ListenErklärt {
     
