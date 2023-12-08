@@ -227,6 +227,86 @@ public class ListenErklärt {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        public void deletingATindex(int index) {
+            
+           Node prev = null;
+           Node current = head;
+
+
+            if (index==0) { head = head.next; return;}
+
+            //go to the index in the list
+
+            while (current!=null && index>0) {
+                prev = current;
+
+                current = current.next;
+
+
+
+                index--;
+            }
+
+            if (current==null) {
+                System.out.println("Angegbener Index wurde nicht gefunden"); return;
+            }
+
+
+            prev.next = current.next; 
+            
+            
+            
+
+
+        }
+
+
+
+
+
+
+
         public int searchNode (int val) { //gibt einen Index Wert zurück und Index fängt immer mit 0 an
             int zeahler = 0;
             Node current = head;
@@ -279,6 +359,7 @@ public class ListenErklärt {
         liste.insertAtTheEnd(5);
         liste.insertSort(0);
         liste.insertAtGivenIndex(10, 0);
+        liste.deleteNodeAtGivenIndex(3);
         // liste.deleteNode(5);
         // liste.deleteNodeAtGivenIndex(1);
         // Display the elements of the list

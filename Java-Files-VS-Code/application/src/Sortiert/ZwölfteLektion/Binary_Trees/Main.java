@@ -12,7 +12,12 @@ public class Main {
         tree.insert(new Node(6));
         tree.insert(new Node(5));
         tree.insert(new Node(7));
-        tree.displayReverse();
+        System.out.println(tree.suche(7));
+        // tree.displayReverse();
+        tree.remove(4);
+
+        tree.inorder_Traversal();
+        // System.out.println(tree.search(5));
 
            
     }
