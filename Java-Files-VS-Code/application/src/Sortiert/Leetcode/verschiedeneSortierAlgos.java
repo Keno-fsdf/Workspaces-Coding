@@ -4,7 +4,7 @@ public class verschiedeneSortierAlgos {
     public static void main(String[] args) {
         int[] array = {6,3,8,9,-1,8,3,-5545,4,6,87};
 
-        Insertionsortieren(array);
+        selectionSort8(array);
 
         System.out.println("Sortiertes Array:");
         for (int value : array) {
@@ -31,23 +31,23 @@ public class verschiedeneSortierAlgos {
     }
 
     public static void bubbleSort3 (int[]array) {
-        for (int i = 0; i< array.length; i++) {
+       
 
-            for (int j = 1+i; j< array.length; j++) {
-            if (array[i] < array[j]) {
-            int temp = array[i];
-            array[i] = array[j];
-            array[j] = temp;
-            
-            
-            }
-            
-            
-            }
-            
-            
-            
+for (int i = 0; i<array.length; i++){
 
+    for (int j = 1+i; j<array.length; j++) {
+    
+    if (array[i]>array[j]) {
+    
+    int temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+    }	
+    
+    }
+    
+    
+    
     }
 
 
@@ -75,7 +75,32 @@ public class verschiedeneSortierAlgos {
 
 
     
+        public static void selectionSort8(int[]array) {
 
+            for (int i = 0; i<array.length-1; i++) {
+            
+            int minIndex = i;
+            
+            for (int j = 1+i; j<array.length;j++) {
+            
+            if (array[minIndex]<array[j]){
+            minIndex = j;
+            
+            }
+            
+            }
+            int temp = array[i];
+            array[i] = array[minIndex];
+            array[minIndex] = temp;
+
+            
+            
+            
+            
+            }
+            
+            
+            }
 
 
 
@@ -120,5 +145,53 @@ public class verschiedeneSortierAlgos {
 
 
     }
+
+
+    public static void insertionSort5(int[] array) {
+
+        for (int i = 1; i<array.length; i++) {
+        int temp = array[i];
+        int j = i-1;
+        
+        while (j>=0 && array[j]<temp) {
+        array[j+1] = array[j];
+        
+        j--;
+        
+        }
+        
+        array[j+1] = temp;
+        
+        
+        
+        }
+        
+        
+        
+        
+        }
+
+
+
+        public static void selectionSort5(int[]array) {
+
+            for (int i = 0; i<array.length-1; i++) {
+            int temp = array[i];
+            
+            for (int j = 1+i; j<array.length; j++) {
+            
+            if (temp>array[j]) {
+            array[i] = array[j];
+            array[j] = temp;
+            }
+            
+            
+            }
+            
+            
+            }
+            
+            
+            }
 
 }
