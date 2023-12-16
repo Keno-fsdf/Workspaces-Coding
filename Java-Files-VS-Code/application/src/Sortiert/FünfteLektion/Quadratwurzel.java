@@ -37,7 +37,7 @@ public class Quadratwurzel {
 
 
     
-    // System.out.println("Unterschied " + unterschied);
+
     yi = berechnung;  
 
 
