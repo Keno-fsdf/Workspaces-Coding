@@ -4,7 +4,7 @@ public class verschiedeneSortierAlgos {
     public static void main(String[] args) {
         int[] array = {6,3,8,9,-1,8,3,-5545,4,6,87};
 
-        selectionSort8(array);
+        slectionSort7(array);
 
         System.out.println("Sortiertes Array:");
         for (int value : array) {
@@ -194,4 +194,66 @@ for (int i = 0; i<array.length; i++){
             
             }
 
-}
+
+
+
+
+
+
+            public static void sortArray(int[] array) {
+                for (int i = 0; i<array.length; i++) {
+
+                    for (int j = 1+i; j <array.length; j++) {
+
+
+                        if (array[i]>array[j]) {
+                            int temp = array[i];
+                            array[i]= array[j];
+                            array[j]=temp;
+
+                        }
+                    }
+                }
+
+
+
+
+            }
+
+
+            public static void insertionsSort9 (int []array) {
+
+                for (int i = 1; i<array.length; i++) {
+                    int temp = array [i];
+                    int j = i-1;
+                    while (j>=0 && array[j]<temp) {
+                        array[j+1] = array[j];
+                        j--;
+
+                    }
+                    array[j+1] = temp;
+                }
+            }
+
+
+
+            public static void slectionSort7 (int[]array){
+                for(int i = 0; i < array.length; i++) {
+
+
+                    int minIndex = i;
+
+                    for (int j = i+1; j<array.length; j++) {
+                        if (array[j]>array[minIndex]) {
+                            minIndex = j; }
+                    }
+
+                    int temp = array[i];
+                    array[i] = array[minIndex];
+                    array[minIndex] = temp; }
+                        }
+                    }
+                
+            
+
+

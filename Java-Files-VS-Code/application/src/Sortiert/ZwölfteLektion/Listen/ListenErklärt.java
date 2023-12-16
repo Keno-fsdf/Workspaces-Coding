@@ -255,6 +255,31 @@ public class ListenErklärt {
 
 
 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -357,9 +382,9 @@ public class ListenErklärt {
         
         liste.insertAtTheEnd(2);
         liste.insertAtTheEnd(5);
-        liste.insertSort(0);
-        liste.insertAtGivenIndex(10, 0);
-        liste.deleteNodeAtGivenIndex(3);
+        liste.insertSort(5);
+        // liste.insertAtGivenIndex(10, 0);
+        // liste.deleteNodeAtGivenIndex(3);
         // liste.deleteNode(5);
         // liste.deleteNodeAtGivenIndex(1);
         // Display the elements of the list
