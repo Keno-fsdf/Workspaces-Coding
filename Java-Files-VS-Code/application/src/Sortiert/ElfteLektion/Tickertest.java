@@ -11,7 +11,7 @@ public class Tickertest {
         char[] nachrichtenArrayString = nachrichtenString.toCharArray();
         neuerTicker.setNachricht(nachrichtenArrayString);
         neuerTicker.rotateNachricht(6);
-        // neuerTicker.resetNachricht();
+        neuerTicker.resetNachricht();
         char[] array = neuerTicker.getNachricht();
         for (char c : array) {
             System.out.print( c  );
