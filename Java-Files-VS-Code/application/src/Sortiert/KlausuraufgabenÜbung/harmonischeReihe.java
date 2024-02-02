@@ -22,7 +22,7 @@ public class harmonischeReihe {
     public static double berechnePotenzen (double basis, int potenz) {
         double result = 1;
         while (potenz>0) {
-            result = result*basis;
+            result*=basis;
             potenz--;
         }
         return result;

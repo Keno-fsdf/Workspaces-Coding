@@ -16,9 +16,9 @@ adjacency_matrix = np.array([
 ])
 
 # Start- und Zielzustände
-start_state = 1
-end_state = 3
-schritte = 2   #matrix potenzieren 
+start_state = 4   #-->Zeile
+end_state = 2  #-->Spalte   -->Ergebnis = Potenzierte Matrix (start-State = Zeile ; End_State = Spalte)
+schritte = 4   #matrix potenzieren 
 
 
 # Berechnung der Anzahl der Pfade in 4 Schritten

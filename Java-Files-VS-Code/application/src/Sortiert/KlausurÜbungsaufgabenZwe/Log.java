@@ -40,6 +40,8 @@ public class Log {
 
 
 public static void main(String[] args) {
+    System.out.println(FifthyFifthy());
+    Math.random();
         double x = 1.6; // Beispielwert, Sie können einen anderen Wert wählen
         try {
             double lnValue = Logs(x);
@@ -48,4 +50,17 @@ public static void main(String[] args) {
             System.out.println(e.getMessage());
         }
 }
+
+
+//test
+
+public static boolean FifthyFifthy () {
+
+    return Math.random() <0.5; }
+
+
+
+
+
+
 }
