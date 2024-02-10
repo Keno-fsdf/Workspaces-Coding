@@ -1,4 +1,4 @@
-package Unsortiert;
+package Sortiert.NeuesKlausurübungsaufgaben.Unsortiert;
 
 import java.util.Scanner;
 

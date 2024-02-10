@@ -7,7 +7,7 @@ public class random {
 
         for (int i = 0; i <= 10000000; i++) {
             // int a = (int) (Math.random()*8 +1);
-            int a = randomNumber();
+            int a = randoms();
 
             
             // Vergleich mit kleinster Zahl
@@ -26,6 +26,9 @@ public class random {
 
 
 
-    public static int randomNumber() {
-        return (int) (43+ Math.random()*6); }
+    public static int randoms() {
+        return (int) (6+ Math.random() *5);
+
+
+        }
 }

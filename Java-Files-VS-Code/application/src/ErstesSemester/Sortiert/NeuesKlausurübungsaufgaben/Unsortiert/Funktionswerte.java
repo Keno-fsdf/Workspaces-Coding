@@ -1,4 +1,4 @@
-package Unsortiert;
+package Sortiert.NeuesKlausurübungsaufgaben.Unsortiert;
 public class Funktionswerte {
     public static void main (String[]args ) {
         
